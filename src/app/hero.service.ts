@@ -15,7 +15,7 @@ export class HeroService {
     private messageService: MessageService,
     private httpClient: HttpClient
   ) {}
-  private heroesUrl = "api/heroes";
+  public heroesUrl = "api/heroes";
   private httpOptions = {
     headers: new HttpHeaders({ "Content-Type": "application/json" })
   };
